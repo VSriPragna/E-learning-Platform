@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>selflearning</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+           img {
+               float: center;
+                border-radius: 50%;
+              }
+ .pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+
+}
+
+.button {
+  background-color:orange;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button {border-radius: 12px;}
+
+.pill-nav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: orange;
+  color: black;
+}
+.hover
+{
+	color: orange;
+}
+
+.column {
+	align-content: center;
+  float: left;
+  width: 20%;
+  padding: 0 30px;
+}
+.row {margin: 0 -10px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+@media screen and (max-width:200px) {
+  .column {
+  	align-content: center;
+    width: 50%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+  color: black;
+}
+.fa {font-size:20px;}
+
+.card1:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<p style="text-align: center;font-weight: bold;color: orange; font-size: 30px;"><img src="C:\Users\Sripragna\OneDrive\Pictures\Camera Roll\5.JPG" height="75" width="75">SELF LEARNERS</p>
+<br>
+</br>
+<hr>
+<div class="pill-nav">
+  <a class="active" href="#"><i class="fa fa-home">HOME</i></a> 
+  <a href="search.html"><i class="fa fa-search">SEARCH</i></a> 
+  <a href="topic.html" target="_blank"><i class="fa fa-book">COURSES</i></a> 
+  <a href="about.html" target="_blank"><i class="fa fa-info-circle">ABOUT US</i></a>
+  <a href="feedback.html" target="_blank"><i class="fa fa-comments">FEEDBACK</i></a>
+  <a onclick="document.getElementById('id01').style.display='block'" style="color: black;font-size: 20px;"><i class="fa fa-user-circle">LOGIN</i></a>
+  <a href="#getstarted"><i class="fa fa-id-badge">REGISTER</i></a>
+</div>
+<hr>
+<br>
+
+
+<p style="font-size: 20px;color:orange;font-weight: bold;text-align: center;">LEARN YOURSELF</p>
+<h3 style="text-align: center;">Learn yourself with the help of our website.Our website encourages self learns like you.</h3>
+<center><img src="C:\Users\Sripragna\OneDrive\Pictures\Camera Roll\7.JPG" height="500" width="500" style="border-radius: 2px;"></center>
+<br>
+<br>
+<h4 align="center"><a href="login.html" target="_blank" class="button" id="getstarted">Get Started</a></h4>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <p><i class="fa fa-user" style="font-size: 30px;"></i></p>
+      <h3>10000+</h3>
+      <p>Students Logins</p>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card1">
+      <p><i class="fa fa-graduation-cap" style="font-size: 30px;"></i></p>
+      <h3>100+</h3>
+      <p>Courses</p>
+    </div>
+  </div>
+  
+ 
+  <div class="column">
+    <div class="card1">
+      <p><i class="fa fa-smile-o" style="font-size: 30px;"></i></p>
+      <h3>9000+</h3>
+      <p>Happy Learners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card1">
+      <p><i class="fa fa-group" style="font-size: 30px;"></i></p>
+      <h3>10+</h3>
+      <p>Excellent Mentors</p>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+  <br>
+
+
+<div id="id01" class="modal">
+ 
+  <form class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="C:\Users\Sripragna\OneDrive\Pictures\Camera Roll\11.JPG" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+      <br>
+
+
+      <label for="psw"><b>Password</b></label>
+      <br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <br>
+       
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+  <br>
+<br>
+<marquee  behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()"><h3 style="color: orange;">*Thank you for visiting self learners*</h3></marquee>
+</body>
+</html>

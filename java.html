@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>java</title>
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+</head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: orange;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+.previous {
+  background-color:orange;
+  color: black;
+  align-content: center;
+}
+
+.next {
+  background-color: orange;
+  color: black;
+  }
+</style>
+<body>
+	<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="c.html">Introduction</a>
+  <a href="Java_topic_files/jvd.html">Variables And DataTypes</a>
+  <a href="Java_topic_files/javaoperators.html">Operators</a>
+  <a href="ccontrol.html">Control Statements</a>
+  <p style="text-align:left;font-weight: bold;">OOP  CONCEPTS IN JAVA :</p>
+  <a href="Java_topic_files/oop.html">Class and Objects</a>
+  <a href="Java_topic_files/javaconstructor.html">Constructors</a>
+  <a href="Java_topic_files/javainheritance.html">Inheritance</a>
+  <a href="Java_topic_files/javaabstraction.html">Abstraction</a>
+  <a href="Java_topic_files/javamodifier.html">Modifiers</a>
+  <a href="Java_topic_files/javapackage.html">Packages</a>
+  <a href="Java_topic_files/javastrings.html">Strings</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">☰ JAVA Tutorial</button>
+<h2 style="color: orange;font-weight: bold;text-align: center;">Introduction To Java</h2>
+<br>  
+
+     
+<h3>What is Java?</h3>
+<p>Java is a popular programming language, created in 1995.
+
+It is owned by Oracle, and more than 3 billion devices run Java.</p>
+<p>It is used for:</p>
+<ul>
+<li>Mobile applications (specially Android apps)</li>
+<li>Desktop applications</li>
+<li>Web servers and application servers</li>
+<li>Database connection</li>
+<li>etc..</li>
+</ul>
+<br>
+<h3>Why Use Java?</h3>
+<ul>
+<li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+<li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+<li>It has a huge community support (tens of millions of developers)</li>
+<li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+<li>It has a huge community support (tens of millions of developers)</li>
+</ul>
+<br>
+<h3>Java Syntax</h3>
+<p>public class Main {</p>
+<p> public static void main(String[] args) {</p>
+<p>System.out.println("Hello World");</p>
+<p>}</p>
+<p>}</p>
+<br>
+<h3>The main Method</h3>
+<p>Any code inside the main() method will be executed. Don't worry about the keywords before and after main. You will get to know them bit by bit while reading this tutorial.
+
+For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.</p>
+<br>
+<h3>System.out.println()</h3>
+<p>Inside the main() method, we can use the println() method to print a line of text to the screen.</p>
+<br>
+<h3>Java Comments</h3>
+<h3>Single-line Comments</h3>
+<p>Single-line comments start with two forward slashes (//).
+
+Any text between // and the end of the line is ignored by Java (will not be executed).</p>
+
+<h3>Java Multi-line Comments</h3>
+<p>Multi-line comments start with /* and ends with */.
+
+Any text between /* and */ will be ignored by Java.</p>
+<h3>Java Type Casting</h3>
+<p>Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double</p>
+<p>Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+</p>
+<br>
+<br>
+<p style="text-align:center; font-size: 20px;">
+
+<a href="Java_topic_files/jvd.html" class="next">Next &raquo;</a></p>
+
+   
+</body>
+</html>

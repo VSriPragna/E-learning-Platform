@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>search</title>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+</head>
+ <style>
+  .button {
+  background-color:orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  * {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+}
+
+
+.left {
+  flex: 50%;
+  padding: 15px ;
+}
+
+.left h2 {
+  padding-left: 0px;
+}
+
+
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 3px solid ;
+  border-color: orange;
+}
+
+
+
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #ffc266;
+}
+
+</style>
+<body>
+      <div class="row">
+<div class="left" style="background-color:white;">
+    <h2 style="font-size: 30px; font-weight: bold;color: orange;" >Subjects</h2>
+    <input type="text" id="mySearch" placeholder="Search Here" onkeyup="myFunction()" title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">HTML</a></li>
+      <br>
+      <br>
+      <li><a href="#">CSS</a></li>
+      <br>
+      <br>
+      <li><a href="#">JavaScript</a></li>
+      <br>
+      <br>
+      <li><a href="#">Data Structures</a></li>
+      <br>
+      <br>
+      <li><a href="#">Python</a></li>
+      <br>
+      <br>
+      <li><a href="c.html">C Programming</a></li>
+      <br>
+      <br>
+      <li><a href="#">SQL</a></li>
+      <br>
+      <br>
+      <li><a href="#">Database Management System</a></li>
+      <br>
+      <br>
+      <li><a href="#">C++</a></li>
+      <br>
+      <br>
+      <li><a href="#">Java</a></li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+
+  <h4 style="text-align:center;color: orange;font-size: 20px;font-weight: bold;">Go to home page.</h4>
+<marquee  behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()"><h3>**Click Below**</h3></marquee>
+<h4 align="center"><a href="project.html" target="_blank" class="button">Home Page</a></h4>
+</div>
+ 
+  
+
+  
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: orange;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+.previous {
+  background-color:orange;
+  color: black;
+  align-content: center;
+}
+
+.next {
+  background-color: orange;
+  color: white;
+  }
+</style>
+<body>
+	<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="introhtml.html">Introduction</a>
+  <a href="html_course_topic_files/html2.html">HTML elements and attributes</a>
+  <a href="html_course_topic_files/tables.html">HTML Tables </a>
+  <a href="html_course_topic_files/commentshtml.html"> HTML Comments</a>
+  <a href="html_course_topic_files/list.html">HTML List</a>
+  <a href="html_course_topic_files/frame.html">HTML Frames</a>
+  
+</div>
+<button class="openbtn" onclick="openNav()">☰ HTML Tutorial</button>
+	<h2 style="color: orange;font-weight: bold;text-align: center;">Introduction To HTML.</h2>
+	<p>HTML is the standard markup language for creating Web pages.</p>
+	<br>
+<h3>What is HTML?</h3>
+<ul>
+	<li>HTML stands for Hyper Text Markup Language</li>
+	<li>HTML is the standard markup language for creating Web pages</li>
+	<li>HTML describes the structure of a Web page</li>
+	<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc</li>
+	<li>HTML elements tell the browser how to display the content</li>
+	</ul>
+	<br>
+	<h3>What is an HTML Element?</h3>
+	<p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+	<p><tagname> Content goes here... </tagname></p>
+	<h3>Web Browsers</h3>
+	<p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.</p>
+	<br>
+	<h1>HTML Basic</h1>
+	<br>
+	<h3>HTML Headings</h3>
+	<p>HTML headings are defined with the h1 to h6 tags.
+
+h1 defines the most important heading. h6 defines the least important heading: </p>
+<br>
+<h3>HTML Paragraphs</h3>
+<p>HTML paragraphs are defined with the p tag.</p>
+<br>
+<h3>HTML Links</h3>
+<p>HTML links are defined with the a tag.The link's destination is specified in the href attribute. </p>
+<h3>HTML Images</h3>
+<p>HTML images are defined with the img tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:</p>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<p style="text-align:center; font-size: 20px;">
+
+<a href="html2.html" class="next">Next &raquo;</a></p>
+
+
+
+
+
+
+</body>
+</html>
