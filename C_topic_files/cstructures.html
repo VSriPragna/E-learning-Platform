@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>c array</title>
+</head>
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color:orange;
+  color: black;
+  align-content: center;
+}
+
+.next {
+  background-color: orange;
+  color: black;
+  }
+</style>
+
+<body>
+	<h1 style="text-align: center;color: orange;font-weight: bold;">C Structures</h1>
+	<h3>C Structures (structs)</h3>
+	<p>Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure..</p>
+	<p>Unlike an array, a structure can contain many different data types (int, float, char, etc.)</p>
+	<br>
+	<h3>Create a Structure</h3>
+	<p>You can create a structure by using the struct keyword and declare each of its members inside curly braces.</p>
+	<br>
+	<p>struct MyStructure {   // Structure declaration<br>
+  int myNum;           // Member (int variable)<br>
+  char myLetter;       // Member (char variable)<br>
+}; // End the structure with a semicolon</p>
+<br>
+	<h3>Access Structure Members</h3>
+	<p>To access members of a structure, use the dot syntax (.)</p>
+	<br>
+	<h3>Simpler Syntax</h3>
+	<p>ou can also assign values to members of a structure variable at declaration time, in a single line.
+
+Just insert the values in a comma-separated list inside curly braces {}. Note that you don't have to use the strcpy() function for string values with this technique.</p>
+	<br>
+	<h3>Example</h3>
+	<p>
+		// Create a structure called myStructure<br>
+struct myStructure {<br>
+  int myNum;<br>
+  char myLetter;<br>
+};<br>
+int main() {<br>
+  // Create a structure variable of myStructure called s1<br>
+  struct myStructure s1;<br>
+
+  // Assign values to members of s1<br>
+  s1.myNum = 13;<br>
+  s1.myLetter = 'B';<br>
+
+  // Print values<br>
+  printf("My number: %d\n", s1.myNum);<br>
+  printf("My letter: %c\n", s1.myLetter);<br>
+
+  return 0;<br>
+}</p>
+<br>
+    <p style="text-align:center; font-size: 20px;">
+<a href="cfunctions.html" class="previous">&laquo; Previous</a>
+
+
+</body>
+</html>

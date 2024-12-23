@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>c variables</title>
+</head>
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: orange;
+  color: black;
+  align-content: center;
+}
+
+.next {
+  background-color: orange;
+  color: black;
+  }
+</style>
+<body>
+<h1 style="text-align: center;color: orange;font-weight: bold;">Variables And DataTypes</h1>
+
+	<h3> C++ Variables</h3>
+<p>Variables are containers for storing data values.
+
+In C, there are different types of variables (defined with different keywords), for example:</p>
+<p>int - stores integers (whole numbers), without decimals, such as 123 or -123</p>
+<p>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</p>
+<p>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</p>
+<h3>Declaring (Creating) Variables</h3>
+<p>Syntax:</p>
+<p>type variableName = value;</p>
+<p>Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.
+
+So, to create a variable that should store a number, look at the following example:</p>
+<p>int myNum = 15;</p>
+
+<br>
+<br>
+<h3>Output Variables</h3>
+<p>You learned from the output chapter that you can output values/print text with the printf() function:</p>
+<p>cout<<"Hello World!";</p>
+<br>
+<br>
+
+<h3>Format Specifiers</h3>
+<p>Format specifiers are used together with the printf() function to tell the compiler what type of data the variable is storing. It is basically a placeholder for the variable value.</p>
+<p>A format specifier starts with a percentage sign %, followed by a character.</p>
+<p>Example:</p>
+<p>int myNum = 15;</p>
+<p>printf("%d", myNum);  // Outputs 15
+</p>
+<br>
+<br>
+<h3>C++ Variable Names</h3>
+<p>All C++ variables must be identified with unique names.
+
+These unique names are called identifiers.</p>
+
+<p>The general rules for naming variables are:</p>
+<p>1.Names can contain letters, digits and underscores.</p>
+<p>2.Names must begin with a letter or an underscore (_)</p>
+<p>3.Names are case sensitive (myVar and myvar are different variables)</p>
+<p>4.Names cannot contain whitespaces or special characters like !, #, %, etc.</p>
+<p>5.Reserved words (such as int) cannot be used as names</p>
+<br>
+<h3>C++ Data Types</h3>
+<p>As explained in the Variables chapter, a variable in C must be a specified data type, and you must use a format specifier inside the printf() function to display it:</p>
+<p>Example:</p>
+<pre>
+	int myNum = 5;               // Integer (whole number)
+float myFloatNum = 5.99;     // Floating point number
+double myDoubleNum = 9.98;   // Floating point number
+char myLetter = 'D';         // Character
+bool myBoolean = true;       // Boolean
+string myText = "Hello";     // String
+
+</pre>
+<h3>Basic Data Types</h3>
+<ul>
+	<li>int---Stores whole numbers, without decimals</li>
+	<li>float---Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits</li>
+	<li>double---Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</li>
+	<li>char---Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</li>
+</ul>
+<h3>Basic Format Specifiers</h3>
+<ul>
+	<li>int--%d</li>
+	<li>float---%f</li>
+	<li>double----%lf</li>
+	<li>char---%c</li>
+</ul>
+<br>
+<br>
+<p style="text-align:center; font-size: 20px;">
+<a href="c++.html" class="previous">&laquo;Previous</a>
+<a href="c++operators.html" class="next">Next &raquo;</a></p>
+</body>
+</html>
